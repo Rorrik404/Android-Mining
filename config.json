@@ -11,7 +11,7 @@
         "url": "stratum+tcp://verus.farm:9999",
 		"timeout": 60,
 		"time-limit": 600,
-		"disabled": 0
+		"disabled": 1
 	}],
 	
 	"user": "RW5Y28Ax3k2ZmqtJ3zb1UatU363jfqSYBT.OP2",
