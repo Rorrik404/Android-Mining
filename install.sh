@@ -79,6 +79,12 @@ printf "exit monitor: 'CTRL-a' followed by 'd'\n\n"
 EOF
 chmod +x start.sh
 
+echo "Setting up crontab..."
+crontab -l > crontab_new
+echo "@reboot ~/ccminer/start.sh" >> crontab_new
+crontab crontab_new
+rm crontab_new
+
 echo "setup nearly complete."
 echo "Edit the config with \"nano ~/ccminer/config.json\""
 
