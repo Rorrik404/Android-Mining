@@ -84,6 +84,7 @@ crontab -l > crontab_new
 echo "@reboot ~/ccminer/start.sh" >> crontab_new
 crontab crontab_new
 rm crontab_new
+/etc/init.d/cron restart
 
 echo "setup nearly complete."
 echo "Edit the config with \"nano ~/ccminer/config.json\""
